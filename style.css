@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* 网页背景：梦幻马卡龙淡紫色 */
+  background-color: #f3e8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+#gameCanvas {
+  /* 游戏背景：温柔马卡龙粉 */
+  background-color: #fce7f3;
+  border-radius: 24px;
+  border: 6px solid #ffffff;
+  box-shadow: 0 16px 36px rgba(244, 114, 182, 0.35);
+}

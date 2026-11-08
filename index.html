@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Pastel Panic - Free Online 2D Action Runner Game</title>
+  <meta name="description" content="Play Pastel Panic online for free! A fast-paced 2D endless runner platformer. Jump over obstacles, duck under bullets, collect coins, and blast enemies in a pastel world.">
+  <meta name="keywords" content="Pastel Panic, Play Pastel Panic, 2D Runner Game, Online Browser Game, Free Web Game, Shooting Runner">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .touch-controls {
+      display: none;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 850px;
+      margin: 15px auto 0;
+      padding: 0 10px;
+      box-sizing: border-box;
+      touch-action: manipulation;
+    }
+    .control-btn {
+      background: rgba(255, 255, 255, 0.85);
+      border: 2px solid #f472b6;
+      border-radius: 12px;
+      color: #8b5cf6;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 14px 24px;
+      user-select: none;
+      -webkit-user-select: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .control-btn:active {
+      background: #f472b6;
+      color: #fff;
+    }
+    @media (pointer: coarse), (max-width: 1024px) {
+      .touch-controls {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game-container" style="text-align: center;">
+    <canvas id="gameCanvas" width="850" height="380" style="max-width: 100%; height: auto; border-radius: 12px;"></canvas>
+
+    <div class="touch-controls">
+      <div style="display: flex; gap: 10px;">
+        <button id="btnJump" class="control-btn">⬆️ 跳跃</button>
+        <button id="btnDuck" class="control-btn">⬇️ 下蹲</button>
+      </div>
+      <button id="btnShoot" class="control-btn" style="border-color: #38bdf8; color: #0284c7;">💥 发射</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
